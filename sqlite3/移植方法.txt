@@ -1,0 +1,2 @@
+cp sqlite3  /usr/bin
+so库放到  /usr/lib

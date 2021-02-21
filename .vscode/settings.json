@@ -1,0 +1,8 @@
+{
+    "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {
+        "gd_bugprint.h": "c",
+        "tcpclienttoqt.h": "c",
+        "byteconverion.h": "c"
+    }
+}

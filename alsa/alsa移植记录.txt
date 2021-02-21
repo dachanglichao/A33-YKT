@@ -1,0 +1,15 @@
+//编译alsa_ib
+./configure  --host=arm-linux  CC=arm-linux-gnueabi-gcc  --enable-static  --enable-shared  --disable-Python --with-configdir=/usr/share --prefix=/home/lc/mplayer/alsa_lib
+//编译alsa_utils
+./configure  --host=arm-linux  CC=arm-linux-gnueabi-gcc --disable-alsamixer  --disable-xmlto  CPPFLAGS=-I/home/lc/mplayer/alsa_lib/include  LDFLAGS=-L/home/lc/mplayer/alsa_lib/lib  --with-alsa-prefix=/home/lc/mplayer/alsa_lib/lib  --with-alsa-inc-prefix=/home/lc/mplayer/alsa_lib/include  --prefix=/home/lc/mplayer/alsa_utils  --enable-static
+
+
+1）alsa_lib/lib 文件拷贝到、usr/lib
+2）alsa_lib/lshare、alsa 文件拷贝到 、usr/share
+3）alsa_utils/bin 目录下播放命令
+
+
+./amixer cset numid=27 3设置音量
+./aplay blackCard.wav  播放音频
+
+

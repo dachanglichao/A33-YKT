@@ -1,0 +1,8 @@
+ConsumeMode=3
+Money=100
+
+
+
+
+
+
